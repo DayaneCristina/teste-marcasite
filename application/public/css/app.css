@@ -1,0 +1,23 @@
+body {
+    padding: 60px 0 70px 0;
+  }
+
+  .container {
+    max-width: 800px;
+  }
+
+  .padding {
+    padding: 0 30px;
+  }
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+  }
+
+  .navbar ul li {
+    display: inline-block;
+    margin-right: 15px;
+  }
