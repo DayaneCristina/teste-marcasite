@@ -27,15 +27,15 @@ Agora é necessário criar uma rede para o nosso projeto e subir os containers d
 
 Após rodar esses comandos, será necessário entrar no container em que o PHP está rodando para poder executar alguns outros comandos. No mesmo terminal, entre o comando:
 
-`php exec -it alonso-engenharia-php-fpm bash`
+`docker exec -it alonso-engenharia-php-fpm bash`
 
 O terminal irá mudar e passará a ser o terminal de dentro do container. Agora, basta rodar os comandos abaixo em sequência para poder subir o banco de dados (Migrate) e popular algumas tabelas que são necessárias (Seeder):
 
 `cd application`
 
-`php artisan key:generate`
-
 `composer install`
+
+`php artisan key:generate`
 
 `php artisan migrate`
 
